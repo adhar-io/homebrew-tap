@@ -11,7 +11,7 @@ class Adhar < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/adhar-io/adhar/releases/download/v0.1.2/adhar-0.1.2-darwin-amd64.tar.gz"
-      sha256 "cb23ea6491b6ca411a0b9816d6bd855a1549508af2cc7f44670a81ffb7b455e0"
+      sha256 "0750aa23d8bb70c77f302ee34d395be0f0616e7cf9f244abcbb1e7578a18b7b0"
 
       def install
         bin.install "adhar"
@@ -19,7 +19,7 @@ class Adhar < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/adhar-io/adhar/releases/download/v0.1.2/adhar-0.1.2-darwin-arm64.tar.gz"
-      sha256 "a4d1195166a6e628a4a160f74363e4481cc234a77e83190f4f131635ed763f1a"
+      sha256 "c97503092735599c1ce898c61506cd65c441f10377595d88a01f13ca325ed2fa"
 
       def install
         bin.install "adhar"
@@ -31,7 +31,7 @@ class Adhar < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/adhar-io/adhar/releases/download/v0.1.2/adhar-0.1.2-linux-amd64.tar.gz"
-        sha256 "a6436409c66c78f552b8d0e3b91d6635e460255e7173d68b68f12592ef4b0f92"
+        sha256 "16c46ab883e760bd9e19085ad8cf52ffdfdf2cbba3223d8a9d56cc5c30e59b68"
 
         def install
           bin.install "adhar"
@@ -41,7 +41,7 @@ class Adhar < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/adhar-io/adhar/releases/download/v0.1.2/adhar-0.1.2-linux-arm64.tar.gz"
-        sha256 "45083f4f3d338316051953cc02660209b0b3fbb26e60e9c59d5423a69c21f2d7"
+        sha256 "78807d7fc8de8693c21e5ad19acd6f2d66f225a821c05da6a3e2b37bbfcc6f88"
 
         def install
           bin.install "adhar"
