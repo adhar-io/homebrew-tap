@@ -5,21 +5,21 @@
 class Adhar < Formula
   desc "Open Foundation for Cloud-Native Platform Engineering"
   homepage "https://adhar.io"
-  version "0.1.43"
+  version "0.1.45"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adhar-io/adhar/releases/download/v0.1.43/adhar-0.1.43-darwin-amd64.tar.gz"
-      sha256 "fd23ff050210bcfd2c229a10020a3d8246fb89b520d7c327a32f680d9ce846d2"
+      url "https://github.com/adhar-io/adhar/releases/download/v0.1.45/adhar-0.1.45-darwin-amd64.tar.gz"
+      sha256 "f401cc4ad377835bd7448ed056b41b8acca0b3a8f6f423582c45e36eb61c4fec"
 
       def install
         bin.install "adhar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adhar-io/adhar/releases/download/v0.1.43/adhar-0.1.43-darwin-arm64.tar.gz"
-      sha256 "588cc8bff49ce81a05369c06b2be79e54c99cf193127331bfeaea1d7721e49c4"
+      url "https://github.com/adhar-io/adhar/releases/download/v0.1.45/adhar-0.1.45-darwin-arm64.tar.gz"
+      sha256 "308c2c7779c6a2efc2c581923d01ddbd8cb8c2a8642b64f2a30b1123a5c32feb"
 
       def install
         bin.install "adhar"
@@ -30,8 +30,8 @@ class Adhar < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/adhar-io/adhar/releases/download/v0.1.43/adhar-0.1.43-linux-amd64.tar.gz"
-        sha256 "23a95842566b7337544bb5b2b4d7f88bd28b7eba7d92b2f8fa603b41b19770db"
+        url "https://github.com/adhar-io/adhar/releases/download/v0.1.45/adhar-0.1.45-linux-amd64.tar.gz"
+        sha256 "ed065f8975ba84474972d72dba55a0f48cd2c167f143e187da7a0f71ac3a323c"
 
         def install
           bin.install "adhar"
@@ -40,8 +40,8 @@ class Adhar < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/adhar-io/adhar/releases/download/v0.1.43/adhar-0.1.43-linux-arm64.tar.gz"
-        sha256 "022c3a139a3a392290697048e63b7e99d08ef274d1ebcdfe606f085886d177ec"
+        url "https://github.com/adhar-io/adhar/releases/download/v0.1.45/adhar-0.1.45-linux-arm64.tar.gz"
+        sha256 "713cafba1b4d4e30fbe13afa547757b3007f8952d8acb85de566bf9da07c6428"
 
         def install
           bin.install "adhar"
